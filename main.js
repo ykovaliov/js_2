@@ -47,7 +47,7 @@ console.log(userObj.fullName());
 
 /* eslint-disable capitalized-comments */
 function defUpperStr(str) { 
- return (str || 'deaful text').toUpperCase();
+ return (str || 'default text').toUpperCase();
 }
 console.log(defUpperStr('My text')); // MY TEXT
 console.log(defUpperStr()); // DEFAULT TEXT
@@ -75,7 +75,7 @@ console.log(defUpperStr()); // DEFAULT TEXT
 // console.log(evenFn(10)); // [2, 4, 6, 8, 10]
 function evenFn(n){
   let array = [];
-  for (let i = 1; i <= n; i++) {
+  for (var i = 1; i <= n; i++) {
     if (i % 2 == 0) {
     array.push(i)
     }
@@ -218,7 +218,7 @@ console.log(15, ageClassification(150) === null);
  */
 function oddFn(n){
   let array = []
-  let i = 1;
+  let i = 0;
   while (i < n) {
     ++i;
     if (i % 2 != 0) {
